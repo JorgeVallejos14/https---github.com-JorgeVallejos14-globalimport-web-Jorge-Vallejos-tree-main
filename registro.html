@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro</title>
-    <link rel="stylesheet" href="style.css"> <!-- Conexión con el archivo CSS -->
+    <link rel="stylesheet" href="registro.css"> <!-- Conexión con el archivo CSS -->
 </head>
 <body>
     <h1>Formulario de Registro</h1>
@@ -14,22 +14,22 @@
             <legend>Datos Personales</legend>
 
             <!-- Nombre completo -->
-            <label for="nombre">Nombre Completo:</label>
+            <label for="nombre">Nombre Completo: <span class="required">*</span></label>
             <input type="text" id="nombre" name="nombre" required>
             <br><br>
 
             <!-- Fecha de nacimiento -->
-            <label for="fecha-nacimiento">Fecha de Nacimiento:</label>
+            <label for="fecha-nacimiento">Fecha de Nacimiento: <span class="required">*</span></label>
             <input type="date" id="fecha-nacimiento" name="fecha-nacimiento" required>
             <br><br>
 
             <!-- RUT/Número de documento -->
-            <label for="documento">RUT/Número de Documento:</label>
+            <label for="documento">RUT/Número de Documento: <span class="required">*</span></label>
             <input type="text" id="documento" name="documento" required>
             <br><br>
 
             <!-- Género -->
-            <label for="genero">Género:</label>
+            <label for="genero">Género: <span class="required">*</span></label>
             <select id="genero" name="genero" required>
                 <option value="masculino">Masculino</option>
                 <option value="femenino">Femenino</option>
@@ -39,7 +39,7 @@
             <br><br>
 
             <!-- Nacionalidad -->
-            <label for="nacionalidad">Nacionalidad:</label>
+            <label for="nacionalidad">Nacionalidad: <span class="required">*</span></label>
             <select id="nacionalidad" name="nacionalidad" required>
                 <option value="argentina">Argentina</option>
                 <option value="chile">Chile</option>
@@ -58,28 +58,28 @@
             <legend>Datos de Contacto y Acceso</legend>
 
             <!-- Correo electrónico -->
-            <label for="email">Correo Electrónico:</label>
+            <label for="email">Correo Electrónico: <span class="required">*</span></label>
             <input type="email" id="email" name="email" required>
             <br><br>
 
             <!-- Confirmar correo electrónico -->
-            <label for="confirmar-email">Confirmar Correo Electrónico:</label>
+            <label for="confirmar-email">Confirmar Correo Electrónico: <span class="required">*</span></label>
             <input type="email" id="confirmar-email" name="confirmar-email" required>
             <br><br>
 
             <!-- Contraseña -->
-            <label for="password">Contraseña:</label>
+            <label for="password">Contraseña: <span class="required">*</span></label>
             <input type="password" id="password" name="password" required>
             <div id="password-strength" style="font-size: 0.9rem; color: gray;">Fuerza de la contraseña: débil</div>
             <br><br>
 
             <!-- Confirmar contraseña -->
-            <label for="confirmar-password">Confirmar Contraseña:</label>
+            <label for="confirmar-password">Confirmar Contraseña: <span class="required">*</span></label>
             <input type="password" id="confirmar-password" name="confirmar-password" required>
             <br><br>
 
             <!-- Teléfono -->
-            <label for="telefono">Teléfono:</label>
+            <label for="telefono">Teléfono: <span class="required">*</span></label>
             <input type="tel" id="telefono" name="telefono" placeholder="+54 11 5555-0000" required>
         </fieldset>
         <br>
@@ -89,7 +89,7 @@
             <legend>Dirección de Entrega</legend>
 
             <!-- País -->
-            <label for="pais">País:</label>
+            <label for="pais">País: <span class="required">*</span></label>
             <select id="pais" name="pais" required>
                 <option value="argentina">Argentina</option>
                 <option value="chile">Chile</option>
@@ -103,22 +103,22 @@
             <br><br>
 
             <!-- Provincia/Estado -->
-            <label for="provincia">Provincia/Estado:</label>
+            <label for="provincia">Provincia/Estado: <span class="required">*</span></label>
             <input type="text" id="provincia" name="provincia" required>
             <br><br>
 
             <!-- Ciudad -->
-            <label for="ciudad">Ciudad:</label>
+            <label for="ciudad">Ciudad: <span class="required">*</span></label>
             <input type="text" id="ciudad" name="ciudad" required>
             <br><br>
 
             <!-- Calle y número -->
-            <label for="calle-numero">Calle y Número:</label>
+            <label for="calle-numero">Calle y Número: <span class="required">*</span></label>
             <input type="text" id="calle-numero" name="calle-numero" required>
             <br><br>
 
             <!-- Código postal -->
-            <label for="codigo-postal">Código Postal:</label>
+            <label for="codigo-postal">Código Postal: <span class="required">*</span></label>
             <input type="text" id="codigo-postal" name="codigo-postal" required>
             <br><br>
 
@@ -130,59 +130,6 @@
             <!-- Referencia o instrucciones adicionales -->
             <label for="referencia">Referencia o Instrucciones Adicionales (opcional):</label>
             <textarea id="referencia" name="referencia" maxlength="200" placeholder="Máximo 200 caracteres"></textarea>
-        </fieldset>
-        <br>
-
-        <!-- Sección de Preferencias y Términos -->
-        <fieldset>
-            <legend>Preferencias y Términos</legend>
-
-            <!-- Categorías de interés -->
-            <label>Categorías de Interés:</label><br>
-            <input type="checkbox" id="electronica" name="intereses" value="electronica">
-            <label for="electronica">Electrónica</label><br>
-            <input type="checkbox" id="indumentaria" name="intereses" value="indumentaria">
-            <label for="indumentaria">Indumentaria</label><br>
-            <input type="checkbox" id="hogar" name="intereses" value="hogar">
-            <label for="hogar">Hogar</label><br>
-            <input type="checkbox" id="otros" name="intereses" value="otros">
-            <label for="otros">Otros</label>
-            <br><br>
-
-            <!-- Tipo de cliente -->
-            <label>Tipo de Cliente:</label><br>
-            <input type="radio" id="consumidor-final" name="tipo-cliente" value="consumidor-final" required>
-            <label for="consumidor-final">Consumidor Final</label><br>
-            <input type="radio" id="revendedor" name="tipo-cliente" value="revendedor">
-            <label for="revendedor">Revendedor</label><br>
-            <input type="radio" id="empresa" name="tipo-cliente" value="empresa">
-            <label for="empresa">Empresa</label>
-            <br><br>
-
-            <!-- ¿Cómo nos conociste? -->
-            <label for="conociste">¿Cómo nos conociste?</label>
-            <select id="conociste" name="conociste" required>
-                <option value="redes-sociales">Redes Sociales</option>
-                <option value="recomendacion">Recomendación</option>
-                <option value="busqueda-web">Búsqueda Web</option>
-                <option value="publicidad">Publicidad</option>
-                <option value="otro">Otro</option>
-            </select>
-            <br><br>
-
-            <!-- Suscripción al newsletter -->
-            <input type="checkbox" id="newsletter" name="newsletter">
-            <label for="newsletter">Deseo suscribirme al newsletter</label>
-            <br><br>
-
-            <!-- Aceptación de términos y condiciones -->
-            <input type="checkbox" id="terminos" name="terminos" required>
-            <label for="terminos">Acepto los <a href="#" target="_blank">Términos y Condiciones</a></label>
-            <br><br>
-
-            <!-- Aceptación de la Política de Privacidad -->
-            <input type="checkbox" id="privacidad" name="privacidad" required>
-            <label for="privacidad">Acepto la <a href="#" target="_blank">Política de Privacidad</a></label>
         </fieldset>
         <br>
 
