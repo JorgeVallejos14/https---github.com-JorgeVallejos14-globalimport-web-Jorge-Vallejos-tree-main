@@ -43,3 +43,47 @@
     background-color: var(--color-light);
     color: var(--color-primary);
   }
+
+  /* Hero */
+.hero {
+  width: 100%;
+  height: 100vh; /* Ocupa toda la altura de la ventana */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-primary);
+  color: var(--color-text);
+  text-align: center;
+}
+
+/* Cards de servicios */
+.cards-container {
+  display: grid; /* Usamos CSS Grid */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Diseño responsivo */
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  background-color: var(--color-light);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones para el hover */
+}
+
+.card:hover {
+  transform: translateY(-10px); /* Efecto de elevación */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Sombra más intensa */
+}
+
+.card h3 {
+  font-family: 'Open Sans', sans-serif;
+  color: var(--color-secondary);
+}
+
+.card p {
+  font-family: 'Roboto', sans-serif;
+  color: var(--color-primary);
+}
