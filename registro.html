@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="style.css"> <!-- Conexión con el archivo CSS -->
+</head>
+<body>
+    <h1>Formulario de Registro</h1>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Datos Personales</legend>
+
+            <!-- Nombre completo -->
+            <label for="nombre">Nombre Completo:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <br><br>
+
+            <!-- Fecha de nacimiento -->
+            <label for="fecha-nacimiento">Fecha de Nacimiento:</label>
+            <input type="date" id="fecha-nacimiento" name="fecha-nacimiento" required>
+            <br><br>
+
+            <!-- RUT/Número de documento -->
+            <label for="documento">RUT/Número de Documento:</label>
+            <input type="text" id="documento" name="documento" required>
+            <br><br>
+
+            <!-- Género -->
+            <label for="genero">Género:</label>
+            <select id="genero" name="genero" required>
+                <option value="masculino">Masculino</option>
+                <option value="femenino">Femenino</option>
+                <option value="no-binario">No Binario</option>
+                <option value="prefiero-no-decir">Prefiero no decir</option>
+            </select>
+            <br><br>
+
+            <!-- Nacionalidad -->
+            <label for="nacionalidad">Nacionalidad:</label>
+            <select id="nacionalidad" name="nacionalidad" required>
+                <option value="argentina">Argentina</option>
+                <option value="chile">Chile</option>
+                <option value="mexico">México</option>
+                <option value="colombia">Colombia</option>
+                <option value="peru">Perú</option>
+                <option value="brasil">Brasil</option>
+                <option value="uruguay">Uruguay</option>
+                <option value="paraguay">Paraguay</option>
+            </select>
+        </fieldset>
+        <br>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
