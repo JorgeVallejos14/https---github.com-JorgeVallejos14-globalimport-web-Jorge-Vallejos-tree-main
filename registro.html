@@ -133,7 +133,70 @@
         </fieldset>
         <br>
 
-        <button type="submit">Enviar</button>
+        <!-- Sección de Preferencias y Términos -->
+        <fieldset>
+            <legend>Preferencias y Términos</legend>
+
+            <!-- Categorías de interés -->
+            <label>Categorías de Interés:</label><br>
+            <input type="checkbox" id="electronica" name="intereses" value="electronica">
+            <label for="electronica">Electrónica</label><br>
+            <input type="checkbox" id="indumentaria" name="intereses" value="indumentaria">
+            <label for="indumentaria">Indumentaria</label><br>
+            <input type="checkbox" id="hogar" name="intereses" value="hogar">
+            <label for="hogar">Hogar</label><br>
+            <input type="checkbox" id="otros" name="intereses" value="otros">
+            <label for="otros">Otros</label>
+            <br><br>
+
+            <!-- Tipo de cliente -->
+            <label>Tipo de Cliente:</label><br>
+            <input type="radio" id="consumidor-final" name="tipo-cliente" value="consumidor-final" required>
+            <label for="consumidor-final">Consumidor Final</label><br>
+            <input type="radio" id="revendedor" name="tipo-cliente" value="revendedor">
+            <label for="revendedor">Revendedor</label><br>
+            <input type="radio" id="empresa" name="tipo-cliente" value="empresa">
+            <label for="empresa">Empresa</label>
+            <br><br>
+
+            <!-- ¿Cómo nos conociste? -->
+            <label for="conociste">¿Cómo nos conociste?</label>
+            <select id="conociste" name="conociste" required>
+                <option value="redes-sociales">Redes Sociales</option>
+                <option value="recomendacion">Recomendación</option>
+                <option value="busqueda-web">Búsqueda Web</option>
+                <option value="publicidad">Publicidad</option>
+                <option value="otro">Otro</option>
+            </select>
+            <br><br>
+
+            <!-- Suscripción al newsletter -->
+            <input type="checkbox" id="newsletter" name="newsletter">
+            <label for="newsletter">Deseo suscribirme al newsletter</label>
+            <br><br>
+
+            <!-- Aceptación de términos y condiciones -->
+            <input type="checkbox" id="terminos" name="terminos" required>
+            <label for="terminos">Acepto los <a href="#" target="_blank">Términos y Condiciones</a></label>
+            <br><br>
+
+            <!-- Aceptación de la Política de Privacidad -->
+            <input type="checkbox" id="privacidad" name="privacidad" required>
+            <label for="privacidad">Acepto la <a href="#" target="_blank">Política de Privacidad</a></label>
+        </fieldset>
+        <br>
+
+        <!-- Botones de acción -->
+        <div style="text-align: center;">
+            <button type="submit" style="background-color: #0077cc; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">Registrarme</button>
+            <button type="reset" style="background-color: #ccc; color: black; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">Limpiar formulario</button>
+        </div>
+        <br>
+
+        <!-- Enlace para iniciar sesión -->
+        <div style="text-align: center;">
+            <a href="#" style="color: #0077cc; text-decoration: none;">Ya tengo cuenta, iniciar sesión</a>
+        </div>
     </form>
 </body>
 </html>
