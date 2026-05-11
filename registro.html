@@ -84,6 +84,55 @@
         </fieldset>
         <br>
 
+        <!-- Sección de Dirección de Entrega -->
+        <fieldset>
+            <legend>Dirección de Entrega</legend>
+
+            <!-- País -->
+            <label for="pais">País:</label>
+            <select id="pais" name="pais" required>
+                <option value="argentina">Argentina</option>
+                <option value="chile">Chile</option>
+                <option value="mexico">México</option>
+                <option value="colombia">Colombia</option>
+                <option value="peru">Perú</option>
+                <option value="brasil">Brasil</option>
+                <option value="uruguay">Uruguay</option>
+                <option value="paraguay">Paraguay</option>
+            </select>
+            <br><br>
+
+            <!-- Provincia/Estado -->
+            <label for="provincia">Provincia/Estado:</label>
+            <input type="text" id="provincia" name="provincia" required>
+            <br><br>
+
+            <!-- Ciudad -->
+            <label for="ciudad">Ciudad:</label>
+            <input type="text" id="ciudad" name="ciudad" required>
+            <br><br>
+
+            <!-- Calle y número -->
+            <label for="calle-numero">Calle y Número:</label>
+            <input type="text" id="calle-numero" name="calle-numero" required>
+            <br><br>
+
+            <!-- Código postal -->
+            <label for="codigo-postal">Código Postal:</label>
+            <input type="text" id="codigo-postal" name="codigo-postal" required>
+            <br><br>
+
+            <!-- Piso y departamento -->
+            <label for="piso-departamento">Piso y Departamento (opcional):</label>
+            <input type="text" id="piso-departamento" name="piso-departamento">
+            <br><br>
+
+            <!-- Referencia o instrucciones adicionales -->
+            <label for="referencia">Referencia o Instrucciones Adicionales (opcional):</label>
+            <textarea id="referencia" name="referencia" maxlength="200" placeholder="Máximo 200 caracteres"></textarea>
+        </fieldset>
+        <br>
+
         <button type="submit">Enviar</button>
     </form>
 </body>
