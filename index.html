@@ -113,6 +113,59 @@
             color: #555;
         }
 
+        /* Estilos para el footer */
+        .site-footer {
+            background-color: #1f2937;
+            color: #f9fafb;
+            padding: 32px 20px;
+            margin-top: 40px;
+        }
+        .footer-content {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 24px;
+            align-items: start;
+        }
+        .footer-brand h2,
+        .footer-links h3,
+        .footer-contact h3 {
+            margin-top: 0;
+            margin-bottom: 12px;
+        }
+        .footer-brand p,
+        .footer-contact p {
+            margin: 0;
+            color: #d1d5db;
+            line-height: 1.6;
+        }
+        .footer-links ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .footer-links a,
+        .footer-contact a {
+            color: #93c5fd;
+            text-decoration: none;
+        }
+        .footer-links a:hover,
+        .footer-contact a:hover {
+            text-decoration: underline;
+        }
+        .footer-bottom {
+            max-width: 1100px;
+            margin: 24px auto 0;
+            padding-top: 16px;
+            border-top: 1px solid rgba(255, 255, 255, 0.12);
+            color: #9ca3af;
+            font-size: 0.95rem;
+        }
+
         /* Estilos responsive */
         @media (max-width: 768px) {
             nav ul {
@@ -201,6 +254,32 @@
             </div>
         </div>
     </section>
+
+    <footer id="contacto" class="site-footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h2>GlobalImport Web</h2>
+                <p>Importación y comercio global con soluciones confiables para empresas de todos los tamaños.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Redes sociales</h3>
+                <ul>
+                    <li><a href="#" aria-label="Facebook de GlobalImport Web">Facebook</a></li>
+                    <li><a href="#" aria-label="Instagram de GlobalImport Web">Instagram</a></li>
+                    <li><a href="#" aria-label="LinkedIn de GlobalImport Web">LinkedIn</a></li>
+                    <li><a href="#" aria-label="X de GlobalImport Web">X</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Contacto</h3>
+                <p>Email: <a href="mailto:contacto@globalimport-web.com">contacto@globalimport-web.com</a></p>
+                <p>Teléfono: <a href="tel:+541155550000">+54 11 5555-0000</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 GlobalImport Web. Todos los derechos reservados.</p>
+        </div>
+    </footer>
     
     <style>
         /* Estilos para la sección "¿Por qué elegirnos?" */
