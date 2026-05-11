@@ -1,0 +1,45 @@
+/* Variables de colores */
+:root {
+    --color-primary: #00aaff; /* Celeste principal */
+    --color-secondary: #0077cc; /* Celeste oscuro */
+    --color-light: #e0f7ff; /* Celeste claro */
+    --color-text: #ffffff; /* Blanco */
+  }
+  
+  /* Tipografías */
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;700&display=swap');
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--color-text);
+    background-color: var(--color-primary);
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  a {
+    color: var(--color-light);
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: var(--color-secondary);
+  }
+  
+  button {
+    background-color: var(--color-secondary);
+    color: var(--color-text);
+    border: none;
+    padding: 10px 20px;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: var(--color-light);
+    color: var(--color-primary);
+  }
